@@ -14,6 +14,8 @@ namespace MaMVC.mvc.Models._21_DAL._213_Repsitories
     {
         // Signature de la méthode Insert
         // Cette méthode sera implémentée par les classes qui utilisent cette interface
+
+        //test avec id
         //public MaTable Insert(MaTable maTable); // Méthode Insert maTable
         public bool Insert(MaTable maTable);
     }
