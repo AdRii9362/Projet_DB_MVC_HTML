@@ -12,4 +12,4 @@ MaTable maTable = new MaTable()
 IMaTableRepository repository = new MaTableService();
 repository.Insert(maTable);
 
-Console.WriteLine();
+Console.WriteLine();//
