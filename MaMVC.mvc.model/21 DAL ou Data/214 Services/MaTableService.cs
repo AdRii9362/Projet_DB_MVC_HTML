@@ -18,7 +18,7 @@ namespace MaMVC.mvc.Models._21_DAL._214_Services
                 using (SqlCommand command = connection.CreateCommand()) 
                 {
                     //je déclare mes paramètres
-                    //command.CommandText = "INSERT INTO MaTable (Nom, Prenom, Annee) OUTPUT inserted.Id VALUES (@Nom,@Prenom,@Annee)";
+                    //command.CommandText = "INSERT INTO MaTable (Nom, Prenom, Annee) OUTPUT inserted.Id VALUES (@Nom,@Prenom,@Annee)"; //pour récupérer un SCALAR il faut mettre un OUTPUT
                     command.CommandText = "INSERT INTO MaTable (Nom, Prenom, Annee) VALUES (@Nom,@Prenom,@Annee)";
                     command.Parameters.AddWithValue("Nom", maTable.Nom);
                     command.Parameters.AddWithValue("Prenom", maTable.Prenom);
